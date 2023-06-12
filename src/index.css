@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;700;900&display=swap");
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.abel {
+  font-family: "Abel", sans-serif;
+  font-weight: 300;
+}
+.active {
+  font-weight: 700;
+  color: rgba(194, 255, 255, 0.959);
+}
+.activeForScroller
+{
+  color: transparent;
+}
+
+article {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.slider-text {
+  border-radius: 5px;
+  background-color: var(--secondaryBackgroundColor);
+  color: var(--PrimaryTextColor);
+}
+
+.activeSlide {
+  opacity: 1;
+  z-index: 1;
+  transform: translateX(0);
+}
+
+.nextSlide {
+  opacity: 0;
+  z-index: -1;
+  transform: translateX(10%);
+}
+
+.lastSlide {
+  opacity: 0;
+  z-index: -1;
+  transform: translateX(-10%);
+}
+
+.timeline-item {
+  margin-bottom: 2em;
+}
+.timeline-item h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+}
+.timeline-item h3::before {
+  content: "";
+  position: absolute;
+  left: -1.6em;
+  background-color: rgb(79, 70, 229);
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  transform: translate(-0.5px, 0.2em);
+}
+
+.timeline-items {
+  transform: translateX(33px);
+  padding-left: 20px;
+
+}
+
+.timeline-item {
+  margin-top: -0.3em;
+}
+.timeline-item time {
+  display: block;
+  float: left;
+  background-color: #ffebeb;
+  padding: 0.2em 0.4em;
+}
+.timeline-item > * {
+  margin: 1em 0;
+}
+.timeline-item .location {
+  clear: both;
+  font-size: 0.85em;
+  font-style: italic;
+}
