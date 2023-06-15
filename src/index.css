@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Raleway&family=Roboto+Condensed&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
 }
 .abel {
   font-family: "Abel", sans-serif;
   font-weight: 300;
+}
+.pacifico
+{
+  font-family: 'Pacifico', cursive;
+  
+
 }
 .active {
   font-weight: 700;
@@ -16,6 +25,10 @@
 .activeForScroller
 {
   color: transparent;
+}
+.Tilt-Prism
+{
+  font-family: 'Tilt Prism', sans-serif;
 }
 
 article {

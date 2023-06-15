@@ -32,7 +32,7 @@ export default function Home() {
               variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="w-[450px] h-[250px] border my-5  rounded-lg"
             >
               <img
@@ -45,7 +45,7 @@ export default function Home() {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.6 }}
+              viewport={{ once: false, amount: 0.6 }}
               className="w-[450px] h-[250px] border my-5 mx-12  rounded-lg"
             >
               <img
@@ -61,8 +61,8 @@ export default function Home() {
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
-                className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl open-sans"
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-4xl font-bold text-gray-900 sm:text-6xl pacifico tracking-wide"
               >
                 Jizzakh
               </motion.h1>
@@ -70,7 +70,7 @@ export default function Home() {
                 variants={fadeIn("up", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.7 }}
                 className="sm:mb-8 sm:flex sm:justify-center"
               >
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 flex justify-center items-center my-12 cursor-pointer">
@@ -97,21 +97,20 @@ export default function Home() {
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.7 }}
                 className="mt-6 text-lg leading-8 text-gray-600"
               >
                 Habibi come to Jizzakh. In this website you can find more
                 information about Jizzakh. Jizzakh is a city located in central
                 Uzbekistan, known for its historical landmarks and beautiful
-                landscapes. With a rich culture and vibrant community,
-                Jizzakh offers visitors a unique experience of traditional
-                Uzbekistan.
+                landscapes. With a rich culture and vibrant community, Jizzakh
+                offers visitors a unique experience of traditional Uzbekistan.
               </motion.p>
               <motion.div
                 variants={fadeIn("up", 0.7)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.7 }}
                 className="mt-10 flex items-center justify-center gap-x-6"
               >
                 <Link

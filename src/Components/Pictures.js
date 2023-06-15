@@ -21,7 +21,7 @@ const Pictures = () => {
         </div>
         {/*main for Highlights */}
         <div className="mx-auto w-full h-full flex items-center justify-center flex-col py-20 pt-14">
-          <h1 className="my-10 text-4xl tracking-tight text-indigo-600 open-sans sm:text-6xl">
+          <h1 className="my-10 text-4xl tracking-tight text-indigo-600 pacifico sm:text-6xl">
             Pictures
           </h1>
           <div className="grid grid-cols-3 w-[1000px] max-lg:w-auto h-auto max-lg:grid-cols-1">

@@ -29,7 +29,10 @@ function Destinations() {
   });
   return (
     <>
-      <div className=" z-40 relative isolate px-6 pt-14 lg:px-8" id="destinations">
+      <div
+        className=" z-40 relative isolate px-6 pt-14 lg:px-8"
+        id="destinations"
+      >
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -50,7 +53,7 @@ function Destinations() {
                 variants={fadeIn("right", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.7 }}
                 className="text-[50px] flex items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 hover:border-indigo-300"
                 onClick={() => setIndex(index - 1)}
               >
@@ -60,7 +63,7 @@ function Destinations() {
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: true, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.7 }}
                 className="hidden text-[50px] items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 max-lg:flex hover:border-indigo-300"
                 onClick={() => setIndex(index + 1)}
               >
@@ -85,23 +88,33 @@ function Destinations() {
                     variants={fadeIn("down", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: false, amount: 0.7 }}
                     className=" z-40 absolute flex w-[800px] h-[500px] mx-auto justify-center items-center max-lg:flex-col max-lg:w-[350px] max-lg:h-[300px]"
                     key={id}
                   >
                     <div
                       className={` ${position} w-[350px] h-[200px] float-left m-5 flex items-center justify-center max-lg:w-[300px]`}
                     >
-                      <img src={image}  alt={title} className="object-cover rounded-md w-full h-full" />
+                      <img
+                        src={image}
+                        alt={title}
+                        className="object-cover rounded-md w-full h-full"
+                      />
                     </div>
                     {/* <div className="max-lg:w-full max-lg:h-auto h-[13rem] border-l max-lg:border-l-transparent max-lg:border-b border-indigo-600 mr-5 lg:my-auto max-lg:mx-auto"> </div> */}
                     <div className="max-lg:py-3 lg:px-3 my-auto mx-auto">
                       <article key={id} className={position}>
                         <div className="slider-text">
-                          <h3 className="text-[32px]">{title}</h3>
-                          <p className="text-gray-600">{describe}</p>
-                          <a href={link} className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 flex justify-center items-center my-12">
-                            <span className="font-semibold text-indigo-600 flex justify-center items-center">Learn More <FaArrowCircleRight className="mx-3 -rotate-45" /></span>
+                          <h3 className="text-[32px] pacifico">{title}</h3>
+                          <p className="text-gray-600 italic">{describe}</p>
+                          <a
+                            href={link}
+                            className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 flex justify-center items-center my-12"
+                          >
+                            <span className="font-semibold text-indigo-600 flex justify-center items-center">
+                              Learn More{" "}
+                              <FaArrowCircleRight className="mx-3 -rotate-45" />
+                            </span>
                           </a>
                         </div>
                       </article>
@@ -114,7 +127,7 @@ function Destinations() {
               variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="text-[50px] flex items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 max-lg:hidden hover:border-indigo-300"
               onClick={() => setIndex(index + 1)}
             >

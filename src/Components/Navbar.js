@@ -10,6 +10,16 @@ import {} from "react-icons/ci";
 const Navbar = () => {
   const [activeLi, setActiveLi] = useState(false);
   const [change, setChange] = useState(true);
+  const [active, setActive] = useState(false);
+  const NavbarActiver = () => {
+    if (window.scrollY >= 80) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  };
+
+  window.addEventListener("scroll", NavbarActiver);
 
   const ResButton = () => {
     setActiveLi(!activeLi);
@@ -17,10 +27,16 @@ const Navbar = () => {
   };
   return (
     <div>
-      <nav className=" fixed z-50 border shadow-sm shadow-slate-500 w-full h-auto bg-slate-600 border-slate-600 text-white">
+      <nav
+        className={
+          active
+            ? "fixed z-50 border shadow-sm shadow-slate-500 w-full h-auto bg-slate-600 border-slate-600 text-white"
+            : "bg-transparent border-none text-slate-600 w-full h-auto fixed z-50"
+        }
+      >
         <div className=" flex justify-between p-8 max-lg:justify-center">
           <div
-            className="lg:px-5 text-[25px] cursor-pointer"
+            className="lg:px-5 text-[25px] cursor-pointer Tilt-Prism"
             title="t.me/abdurahmon_27"
           >
             JizzaxGuide
@@ -28,8 +44,8 @@ const Navbar = () => {
           <ul
             className={
               activeLi
-                ? "z-50 flex justify-center align-center max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:h-full max-lg:bg-slate-600"
-                : "z-50 flex justify-center align-center max-lg:hidden"
+                ? "z-50 flex justify-center align-center max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:h-full max-lg:bg-slate-600 max-lg:text-white"
+                : "z-50 flex justify-center align-center max-lg:hidden max-lg:text-white"
             }
           >
             <Link
@@ -93,7 +109,7 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={ResButton}
-              to="map"
+              to="maps"
               smooth={true}
               spy={true}
               activeClass="active"
@@ -111,16 +127,22 @@ const Navbar = () => {
           className=" hidden max-lg:flex max-lg:mx-1 max-lg:absolute max-lg:top-[2.5rem] max-lg:right-5 w-9 h-8 max-lg:text-[25px] max-lg:z-50"
           onClick={ResButton}
         >
-          {change ? <FaBars /> : <FaTimes />}
+          {change ? <FaBars /> : <FaTimes className="max-lg:text-white" />}
         </button>
         <div className="w-full flex justify-end h-10 top-[5rem]  absolute">
-          <div className="flex justify-center border bg-slate-600 border-slate-600 text-white w-96 mx-5 max-lg:hidden rounded-full">
+          <div
+            className={
+              active
+                ? "flex justify-center border bg-slate-600 border-slate-600 text-white w-96 mx-5 max-lg:hidden rounded-full"
+                : "flex justify-center border bg-white border-slate-600 text-slate-600 w-96 mx-5 max-lg:hidden rounded-full"
+            }
+          >
             {/* Need to connect to the API  */}
             <span className="px-3 text-[15px] italic flex justify-center items-center">
               Weather in Jizzakh:
             </span>
             <span className="px-3 text-[15px] italic flex justify-center items-center">
-              <span className="text-gray-200 font-thin">Sunny, 27°</span>
+              <span>Sunny, 27°</span>
             </span>
           </div>
         </div>

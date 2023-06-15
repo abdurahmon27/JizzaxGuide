@@ -28,9 +28,11 @@ const Hotels = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
             >
-              <h2 className="text-[3rem] text-indigo-600">Hotels in Jizzakh</h2>
+              <h2 className="text-[3rem] text-indigo-600 pacifico">
+                Hotels in Jizzakh
+              </h2>
               <div className="timeline-items m-[2em] border-transparent border border-l-indigo-600 lg:mr-[3em]">
                 <div className="timeline-item ">
                   <h3>Uzbekistan Grand Hotel</h3>
@@ -43,7 +45,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">60$ for one night</div>
+                  <div className="location text-gray-500">
+                    60$ for one night
+                  </div>
                 </div>
                 <div className="timeline-item">
                   <h3>Umariyon Hotel</h3>
@@ -56,7 +60,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">22$ for one night</div>
+                  <div className="location text-gray-500">
+                    22$ for one night
+                  </div>
                 </div>
                 <div className="timeline-item">
                   <h3>Hotel Grand Royal</h3>
@@ -69,7 +75,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">40$ for one night</div>
+                  <div className="location text-gray-500">
+                    40$ for one night
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -79,7 +87,7 @@ const Hotels = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: true, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
             >
               <div className="timeline-items m-[2em] border-transparent border border-l-indigo-600">
                 <div className="timeline-item">
@@ -93,7 +101,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">30$ for one night</div>
+                  <div className="location text-gray-500">
+                    30$ for one night
+                  </div>
                 </div>
                 <div className="timeline-item">
                   <h3>Hotel Buyuk</h3>
@@ -106,7 +116,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">45$ for one night</div>
+                  <div className="location text-gray-500">
+                    45$ for one night
+                  </div>
                 </div>
                 <div className="timeline-item">
                   <h3>Yurt Camp Safari</h3>
@@ -119,7 +131,9 @@ const Hotels = () => {
                       <FaArrowCircleRight className="mx-2 -rotate-45" />
                     </span>
                   </a>
-                  <div className="location text-gray-500">32$ for one night</div>
+                  <div className="location text-gray-500">
+                    32$ for one night
+                  </div>
                 </div>
               </div>
             </motion.div>

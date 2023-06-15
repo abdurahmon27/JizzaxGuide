@@ -8,7 +8,7 @@ const GoogleMaps = () => {
   if (!isLoaded) return <div className="w-full h-full items-center justify-center">Loading...</div>;
   return (
     <>
-      <div className=" w-[500px] h-[500px] max-lg:w-full py-20 flex items-center justify-center">
+      <div className=" w-[500px] h-[500px] max-lg:w-full py-10 translate-y-20" id="maps">
         <Map />
       </div>
     </>
@@ -21,7 +21,7 @@ function Map() {
     <GoogleMap
       zoom={10}
       center={center}
-      mapContainerClassName="w-full h-full flex items-center justify-center"
+      mapContainerClassName="w-full h-full"
     >
       <Marker position={center}></Marker>
     </GoogleMap>

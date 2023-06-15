@@ -7,7 +7,8 @@ import Pictures from "./Components/Pictures";
 import { Footer } from "./Components/Footer";
 import  MapForSite  from "./Components/GoogleMaps";
 
-/* Website created in 5 days. 
+/* Website created in 3 days. 
+###bugs fixed 06.15.2023
 Used: Reactjs, Tailwind CSS.
 Installed packages or dependencies:
 react-icons, framer-motion, @react-google-maps/api, google-map-react, react-scroll, @heroicons/react, react-intersection-observer;

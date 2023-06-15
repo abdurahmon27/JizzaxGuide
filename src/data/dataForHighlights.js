@@ -7,10 +7,17 @@ import Image6 from "../assest/j2.jpg";
 import Image7 from "../assest/zomin2.jpg";
 import Image8 from "../assest/j6.jpg";
 import Image9 from "../assest/zomin3.jpg";
-import Image10 from "../assest/zomin1.jpg";
+import Image10 from "../assest/grhotel.jpg";
 import Image11 from "../assest/j3.jpg";
 import Image12 from "../assest/j4.jpg";
 import Image13 from "../assest/j5.jpg";
+import Image14 from "../assest/j7.jpg";
+import Image15 from "../assest/j8.jpg";
+import Image16 from "../assest/j9.jpg";
+import Image17 from "../assest/j10.jpg";
+import Image18 from "../assest/j11.jpg";
+import Image19 from "../assest/j12.jpg";
+import Image20 from "../assest/j13.jpg";
 
 const HighlightsData = [
   {
@@ -64,6 +71,32 @@ const HighlightsData = [
   {
     id: 13,
     image: Image13,
+  },
+  {
+    id: 14,
+    image: Image14,
+  },
+  {
+    id: 15,
+    image: Image15,
+  },
+  {
+    id: 16,
+    image: Image16,
+  },
+  {
+    id: 17,
+    image: Image17,
+  },
+  {
+    id: 18,
+    image: Image18,
+  },{
+    id: 19,
+    image: Image19,
+  },{
+    id: 20,
+    image: Image20,
   },
 
 ];
