@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Raleway&family=Roboto+Condensed&family=Tilt+Prism&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+*
+{
+  cursor: none !important;
+}
+
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
 }
