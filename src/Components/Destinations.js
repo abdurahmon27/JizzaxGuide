@@ -105,7 +105,7 @@ function Destinations() {
                     <div className="max-lg:py-3 lg:px-3 my-auto mx-auto">
                       <article key={id} className={position}>
                         <div className="slider-text">
-                          <h3 className="text-[32px] pacifico">{title}</h3>
+                          <h3 className="text-[32px] pacifico text-[#393e46]">{title}</h3>
                           <p className="text-gray-600 italic">{describe}</p>
                           <a
                             href={link}

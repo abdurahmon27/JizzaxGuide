@@ -30,7 +30,7 @@ const Hotels = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              <h2 className="text-[3rem] text-indigo-600 pacifico">
+              <h2 className="text-[3rem] text-[#393e46] pacifico">
                 Hotels in Jizzakh
               </h2>
               <div className="timeline-items m-[2em] border-transparent border border-l-indigo-600 lg:mr-[3em]">

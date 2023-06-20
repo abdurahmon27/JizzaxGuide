@@ -1,8 +1,8 @@
 import { CiLocationOn } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Image from "../assest/jizzakhForMain.jpg";
-import Image2 from "../assest/jizzakhForMain2.jpg";
+import Image from "../assest/j1.jpeg";
+import Image2 from "../assest/zomin1.jpg";
 import { Link } from "react-scroll";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <div
-        className="relative isolate px-6 pt-14 lg:px-8 max-lg:pt-40 flex items-center justify-center"
+        className="relative isolate px-6 pt-14 lg:px-8 max-lg:pt-40 flex items-center justify-center "
         id="home"
       >
         <div
@@ -62,7 +62,7 @@ export default function Home() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-4xl font-bold text-gray-900 sm:text-6xl pacifico tracking-wide"
+                className="text-4xl font-bold text-[#393e46] sm:text-6xl pacifico tracking-wide"
               >
                 Jizzakh
               </motion.h1>

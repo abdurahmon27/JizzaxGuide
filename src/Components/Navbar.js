@@ -30,8 +30,8 @@ const Navbar = () => {
       <nav
         className={
           active
-            ? "fixed z-50 border shadow-sm shadow-slate-500 w-full h-auto bg-slate-600 border-slate-600 text-white"
-            : "bg-transparent border-none text-slate-600 w-full h-auto fixed z-50"
+            ? "fixed z-50 border shadow-sm shadow-slate-500 w-full h-auto bg-[#393e46] border-[#393e46] text-white"
+            : "bg-transparent border-none text-[#393e46] w-full h-auto fixed z-50"
         }
       >
         <div className=" flex justify-between p-8 max-lg:justify-center">
@@ -44,7 +44,7 @@ const Navbar = () => {
           <ul
             className={
               activeLi
-                ? "z-50 flex justify-center align-center max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:h-full max-lg:bg-slate-600 max-lg:text-white"
+                ? "z-50 flex justify-center align-center max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:h-full max-lg:bg-[#393e46] max-lg:text-white"
                 : "z-50 flex justify-center align-center max-lg:hidden max-lg:text-white"
             }
           >
@@ -133,8 +133,8 @@ const Navbar = () => {
           <div
             className={
               active
-                ? "flex justify-center border bg-slate-600 border-slate-600 text-white w-96 mx-5 max-lg:hidden rounded-full"
-                : "flex justify-center border bg-white border-slate-600 text-slate-600 w-96 mx-5 max-lg:hidden rounded-full"
+                ? "flex justify-center border bg-[#393e46] border-[bg-[#393e46]] text-white w-96 mx-5 max-lg:hidden rounded-full"
+                : "flex justify-center border bg-white border-[bg-[#393e46]] text-[#393e46] w-96 mx-5 max-lg:hidden rounded-full"
             }
           >
             {/* Need to connect to the API  */}

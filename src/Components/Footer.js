@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <>
       <div className="w-full h-[300px] flex justify-center items-center">
-        <div className=" w-full h-full flex justify-center items-center border-t border-t-white py-5  bg-slate-600 flex-row max-lg:flex-col max-lg:pb-[7rem] z-40">
+        <div className=" w-full h-full flex justify-center items-center border-t border-t-white py-5  bg-[#393e46] flex-row max-lg:flex-col max-lg:pb-[7rem] z-40">
           <div className="mx-10 flex items-center justify-center">
             <a
               href={linkForDeveloper}
