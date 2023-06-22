@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 .cursor
 {
@@ -48,55 +48,5 @@
     opacity: 0;
     visibility: hidden;
   }
-=======
 
-.cursor
-{
-  bottom: 1rem;
-  left: 1rem;
-
-}
-
-.main-cursor,
-.secondary-cursor {
-  z-index: 10000;
-  pointer-events: none;
-  position: fixed;
-}
-.main-cursor {
-  width: 25px;
-  height: 25px;
-  background: rgb(75, 85, 105);
-  border-radius: 50%;
-  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
-  animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-  transform: translate3d(0, 0, 0);
-}
-.secondary-cursor
-{
-  transform: translate3d(0, 0, 0);
-  width: 50px;
-  height: 50px;
-  border: .5px solid white;
-  border-radius: 50%;
-  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
-  animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-  mix-blend-mode: difference;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .cursor, .main-cursor, .secondary-cursor{
-    opacity: 0;
-    visibility: hidden;
-  }
->>>>>>> cb8ca2f54620c118974dc90cc1fee0d082409eae
 }
