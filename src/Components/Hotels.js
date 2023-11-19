@@ -28,7 +28,7 @@ const Hotels = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
             >
               <h2 className="text-[3rem] text-[#393e46] pacifico">
                 Hotels in Jizzakh
@@ -87,7 +87,7 @@ const Hotels = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
             >
               <div className="timeline-items m-[2em] border-transparent border border-l-indigo-600">
                 <div className="timeline-item">

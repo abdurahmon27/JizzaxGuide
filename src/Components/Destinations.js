@@ -53,7 +53,7 @@ function Destinations() {
                 variants={fadeIn("right", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="text-[50px] flex items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 hover:border-indigo-300"
                 onClick={() => setIndex(index - 1)}
               >
@@ -63,7 +63,7 @@ function Destinations() {
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className="hidden text-[50px] items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 max-lg:flex hover:border-indigo-300"
                 onClick={() => setIndex(index + 1)}
               >
@@ -84,11 +84,12 @@ function Destinations() {
                   position = "lastSlide";
                 }
                 return (
+
                   <motion.div
                     variants={fadeIn("down", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: true, amount: 0.7 }}
                     className=" z-40 absolute flex w-[800px] h-[500px] mx-auto justify-center items-center max-lg:flex-col max-lg:w-[350px] max-lg:h-[300px]"
                     key={id}
                   >
@@ -127,7 +128,7 @@ function Destinations() {
               variants={fadeIn("left", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="text-[50px] flex items-center justify-center border border-white rounded-full w-[80px] h-[80px] my-5 ml-5 shadow-lg text-indigo-600 max-lg:hidden hover:border-indigo-300"
               onClick={() => setIndex(index + 1)}
             >
