@@ -16,7 +16,7 @@ react-icons, framer-motion, @react-google-maps/api, google-map-react, react-scro
 Framer-motion once true, because responsive mode has problem.
 
 You can find source code in: github.com/abdurahmon27
-Contact with developer: t.me/abdurahmon_27
+Contact with developer: t.me/abdurahmon_official
 Description in uzbek:
 Hech qanday copy pastesiz yaratilgan jizzaxguide 1.0.0 web app or just web blog
 */
